@@ -9,8 +9,8 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: "ResendApp <onboarding@resend.dev>", // website email address
-      to: "vincent4552@gmail.com",
-      subject: "Jack Chin - Art Gallery Contact Message",
+      to: "gavia.lori@gmail.com",
+      subject: "Lori Gavia - tech-art-portfolio Contact Form Submission",
       html: `<p>Message Details:<br /><br />${body.message}<br /><br />From: ${body.firstName} ${body.lastName} (${body.email})</p>`,
     });
 

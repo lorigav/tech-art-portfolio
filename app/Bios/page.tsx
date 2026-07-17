@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 const BioPage = () => {
-  const currentAge = new Date().getFullYear() - 1998;
+  const currentAge = new Date().getFullYear() - 2003;
 
   return (
     <div className='w-5/6 mx-auto'>
@@ -14,10 +14,10 @@ const BioPage = () => {
             <Image src="/images/profile.jpg" alt="" className='w-96' width={150} height={150} />
           </figure>
           <div className="card-body text-justify">
-            <h2 className="card-title">Meet Jack!</h2>
-            <p>My name is Jack Chin. I&apos;m an artist from Kuala Lumpur, Malaysia. I am currently {currentAge} and have been drawing since 16 years old.
-              I have found my way in work of art created with marker pens.
-              This website is created by my brother - Vincent that studies Computer Science and loves to create meaningful projects during free time.
+            <h2 className="card-title">About Me</h2>
+            <p>Hello! My name is Lori Gavia and I am a technical artist based in Los Angeles, CA. I am currently {currentAge} and studied Liberal Arts and Engineering at
+              Cal Poly San Luis Obispo with concentations in Computer Graphics and Animation. A lot of the projects I have worked on in college revolve around game development 
+              game engine optimization, and 3d asset creation. Passionate about both art and technology, I strive to provide efficient technical support to creative teams. </p>
             </p>
             <Link href="/Contact">
               <div className="card-actions justify-end">
