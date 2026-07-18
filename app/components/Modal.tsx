@@ -10,7 +10,14 @@ const ImagePreview = ({ imagePath }: { imagePath: string }) => {
 
   return (
     <div>
-      <Image src={imagePath} onClick={toggleModal} className="cursor-pointer" alt={""} width={720} height={720} />
+      <Image
+        src={imagePath}
+        onClick={toggleModal}
+        className="h-64 w-full cursor-pointer rounded-lg object-cover transition-opacity hover:opacity-90"
+        alt=""
+        width={720}
+        height={720}
+      />
       <Modal
         isOpen={showModal}
         onRequestClose={toggleModal}
