@@ -11,7 +11,7 @@ const BioPage = () => {
       <div className='flex item-center justify-center'>
         <div className="card lg:card-side bg-base-100 shadow-xl">
           <figure>
-            <Image src="/images/profile.jpg" alt="" className='w-96' width={150} height={150} />
+            <Image src="/images/profile1.jpg" alt="" className='w-96' width={150} height={150} />
           </figure>
           <div className="card-body text-justify">
             <h2 className="card-title">About Me</h2>
