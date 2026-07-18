@@ -12,17 +12,15 @@ const Navbar = () => {
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li><Link href="/">WORK</Link></li>
             <li><Link href="/Bios">BIO</Link></li>
-            <li><Link href="/CV">CV</Link></li>
             <li><Link href="/Contact">CONTACT</Link></li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl" href="/">Jack Chin</Link>
+        <Link className="btn btn-ghost text-xl" href="/">Lori Gavia</Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li><Link href="/">WORK</Link></li>
           <li><Link href="/Bios">BIO</Link></li>
-          <li><Link href="/CV">CV</Link></li>
           <li><Link href="/Contact">CONTACT</Link></li>
         </ul>
       </div>

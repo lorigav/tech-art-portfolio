@@ -5,38 +5,28 @@ export default function Home() {
     <main>
       <div className="flex items-center justify-center carousel space-x-4 py-2">
         <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (1).jpg" />
+          <ImagePreview imagePath="/images/CMYcover.png" />
         </div>
         <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (2).jpg" />
+          <ImagePreview imagePath="/images/DDDcover.png" />
         </div>
       </div>
       <div className="flex items-center justify-center carousel space-x-4 py-2">
         <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (3).jpg" />
+          <ImagePreview imagePath="/images/SenProjcover.png" />
         </div>
         <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (4).jpg" />
+          <ImagePreview imagePath="/images/trailercover.png" />
         </div>
       </div>
-      <div className="flex items-center justify-center carousel space-x-4 py-2">
+      {/* <div className="flex items-center justify-center carousel space-x-4 py-2">
         <div className="carousel-item w-96">
           <ImagePreview imagePath="/images/building (5).jpg" />
         </div>
         <div className="carousel-item w-96">
           <ImagePreview imagePath="/images/building (6).jpg" />
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
-
-// {ImageData.map((image) => (
-//   <Image
-//     key={image.name}
-//     src={image.src}
-//     alt={image.name}
-//     width={image.width}
-//     height={image.height}
-//   />
-// ))}
