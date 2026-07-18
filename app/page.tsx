@@ -1,32 +1,40 @@
-import ImagePreview from "./components/Modal";
+import Image from "next/image";
+import Link from "next/link";
+import { Projects } from "../constants/projects";
 
 export default function Home() {
   return (
     <main>
-      <div className="flex items-center justify-center carousel space-x-4 py-2">
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/CMYcover.png" />
-        </div>
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/DDDcover.png" />
-        </div>
-      </div>
-      <div className="flex items-center justify-center carousel space-x-4 py-2">
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/SenProjcover.png" />
-        </div>
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/trailercover.png" />
-        </div>
-      </div>
-      {/* <div className="flex items-center justify-center carousel space-x-4 py-2">
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (5).jpg" />
-        </div>
-        <div className="carousel-item w-96">
-          <ImagePreview imagePath="/images/building (6).jpg" />
-        </div>
-      </div> */}
+      {Projects.map((project) => (
+        <section
+          key={project.slug}
+          className="group relative h-[70vh] w-full overflow-hidden md:h-[85vh]"
+        >
+          <Image
+            src={project.coverImage}
+            alt={project.title}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+          <div className="absolute inset-0 flex flex-col items-center justify-end gap-4 px-4 pb-14 text-center text-white">
+            <h2 className="text-3xl font-bold drop-shadow-md md:text-5xl">
+              {project.title}
+            </h2>
+            <p className="max-w-xl text-white/80 drop-shadow-sm">
+              {project.tagline}
+            </p>
+            <Link
+              href={`/projects/${project.slug}`}
+              className="btn btn-primary btn-wide"
+            >
+              View Project
+            </Link>
+          </div>
+        </section>
+      ))}
     </main>
   );
 }
