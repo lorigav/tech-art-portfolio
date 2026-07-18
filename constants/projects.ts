@@ -26,7 +26,7 @@ export const Projects: Project[] = [
       "CMYKingdom is a 3d platformer exploration game where you collect crystals to restore color back into a monocrhome world. The game is designed to be a relaxing and immersive experience, with a focus on exploration and discovery. This was a 10 week collaborative project ran on a game engine our team built using OpenGL. This process included asset and level optomization, as well as various culling/rendering techniques to ensure the game ran smoothly on different systems. Some of my major contibutions to this project is the player model, and the game UI design/implementation.",
     role: "Technical Artist, 3D Modeler, UI Designer",
     tools: "Maya, Substance Painter, OpenGL, C++, GitHub",
-    images: ["/images/CMYcover.png"],
+    images: ["/images/CMYcover.png", "/images/CMY1.png", "/images/CMY2.png", "/images/CMY3.gif", "/images/CMY4.gif"],
   },
   {
     slug: "DDD",
@@ -37,7 +37,7 @@ export const Projects: Project[] = [
       "Dumpledore's Dumpster Defense is a tower defense / hack and slash hybrid game. Where you start as Dumpledore, a wizard who is capable of binmancy - that is the magical control over trash and trash-like objects. Throughout the game the player can buy different weapons or summons from the shop to help defend their dumpster, whilst enemy waves get harder as the game progrsses. This was a 10 week collaborative project done in Unity where our main goal was to create engaing and meaningful play. In this project I was responsible for the summon model and game mechanics, as well as the UI design.",
     role: "Programmer and UI Designer",
     tools: "Unity, C#, GitHub",
-    images: ["/images/DDDcover.png"],
+    images: ["/images/DDDcover.png", "/images/DDD1.png", "/images/DDD2.png", "/images/DDD3.png", "/images/DDD4.png", "/images/DDD5.png"],
   },
   {
     slug: "senior-project",
